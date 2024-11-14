@@ -26,3 +26,7 @@ echo "<h1>Bem vindo ao Site</h1>"; // comando de escrita (saída)
 print("<h2> Novo Texto </h2>"); // escreve texto
 
 echo phpinfo();
+
+require_once("public/topo.php");
+require_once("views/home.php");
+require_once("public/rodape/home.php");
