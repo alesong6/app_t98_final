@@ -16,17 +16,42 @@
 
         Os arquivos são salvos como .php e podem ter HTMl, CSS, JS dentro deles.
 
+        - phpinfo() - função que mostra as configs do servidor
+        - echo "" - escreve texto/strings
+        - print() - escreve textos
+
         Sintaxe
 
             <?php comandos;  ?>
     */
 
-echo "<h1>Bem vindo ao Site</h1>"; // comando de escrita (saída)
+# echo "<h1>Bem vindo ao Site</h1>"; // comando de escrita (saída)
 
-print("<h2> Novo Texto </h2>"); // escreve texto
+# print("<h2> Novo Texto </h2>"); // escreve texto
 
-echo phpinfo();
+# echo phpinfo();
 
-require_once("public/topo.php");
-require_once("views/home.php");
-require_once("public/rodape/home.php");
+# require_once("public/topo.php"); # insere um arquivo
+
+# No php as variáveis são dinaminamicamente tipadas, podem armazenar ter qualquer tipo de dados.
+# No C# string nome = "texto"; variáveis são tipadas.
+# No PHP $nome = "valor";
+
+# Pegando variáveis GET (url) - usado principalmente para navegação
+
+$pagina = @$_GET['pagina'];
+
+# echo '<h1 class="titulo" >' . $pagina .'</h1>'; # string
+
+# estruturas condicionais no php: if else elseif switch
+# escolha caso / switch case
+switch( $pagina ) 
+{
+    case "sistema":
+        require_once("views/painel.php");
+        break;
+        
+    default: require_once("views/home.php");
+}
+
+?>

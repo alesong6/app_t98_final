@@ -1,4 +1,18 @@
-</section>
+<?php require_once( __DIR__ . "/topo.php"); ?>   
+    
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide" data-splide-interval="1000"><img
+                        src="https://placehold.co/1920x600/?text=Slide 01" alt=""></li>
+                <li class="splide__slide" data-splide-interval="1000"><img
+                        src="https://placehold.co/1920x600/?text=Slide 02" alt=""></li>
+                <li class="splide__slide" data-splide-interval="1000"><img
+                        src="https://placehold.co/1920x600/?text=Slide 03" alt=""></li>
+            </ul>
+        </div>
+
+    </section>
 
     <main>
         <section>
@@ -78,3 +92,5 @@
         </div>
 
     </article>
+
+ <?php require_once( __DIR__ . "/rodape.php"); ?> 

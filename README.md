@@ -1,1 +1,5 @@
-# app_t98_final
+# app_python
+
+### Tasks
+
+[ ] Ajustar vercel e docker
