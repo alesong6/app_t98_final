@@ -100,7 +100,18 @@
 
     <section>
 
-        <h1>Conteúdos</h1>
+        <?php 
+            switch( $_GET['tela']){
+                case "faq": 
+                    require_once("painelFaq.php");
+                    break;
+
+                case "usuarios": 
+                    require_once("painelUsuarios.php");
+                    break;   
+            } 
+            
+        ?>
 
     </section>
 
