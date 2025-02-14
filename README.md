@@ -11,6 +11,7 @@ Este repositório contém um projeto de teste para empresas, implementado utiliz
 - **Docker**: Contêineres para configurar o ambiente de desenvolvimento.
 - **Vercel**: Plataforma de hospedagem para o deploy do projeto.
 - **Nginx**: Servidor web utilizado para a entrega do conteúdo estático.
+- **Python**: Desenvolvimento de um aplicativo para celular utilizando frameworks como Kivy ou Flask (ou qualquer outra tecnologia Python relevante).
 
 ## Funcionalidades
 
